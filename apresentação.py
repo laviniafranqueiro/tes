@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 
-st.title('avaliação do Josir')
+st.title('Notebooks e produtos relacionados')
 st.caption('Lavínia Franqueiro')
 
-user_input = st.text_input("Digite a marca do notebook que você está procurando:")
+user_input = st.text_input("Qual produto você deseja?")
 
 df = pd.read_csv('jupyter2.csv')  # Assuming 'jupyter2.txt' is your file name
 
