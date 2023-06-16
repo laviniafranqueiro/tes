@@ -17,6 +17,6 @@ if user_input:
 
 for i in range(df.shape[0]):
     marca = df.iloc[i]['marca']
-    preco = df.iloc[i]['preço']
+    preco = df.iloc[i]['preço2']
     link = df.iloc[i]['link']
     st.markdown(f"**Marca**: {marca}  \n**Preço**: {preco}  \n**[Link para o produto]({link})**")
