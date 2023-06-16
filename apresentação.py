@@ -7,16 +7,6 @@ st.caption('Lavínia Franqueiro')
 user_input = st.text_input("Qual produto você deseja?")
 
 df = pd.read_csv('jupyter2.csv')  
-#defir uma função para converter valores 
-def converter_valor(valor):
-    valor_limpo = valor.replace('R$,', '').replace('.', '').replace(',', '.')
-    return float(valor_limpo)
-
-#Aplicar a função a coluna 'preço'
-df['preço2'] = df['preço'].apply(converter_valor)
-
-df = df.sort_values(by='preço2')
-
 
 # Check if user has entered something in the text input box
 if user_input:
