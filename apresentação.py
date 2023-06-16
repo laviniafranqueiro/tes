@@ -7,7 +7,6 @@ st.caption('Lavínia Franqueiro')
 user_input = st.text_input("Qual produto você deseja?")
 
 df = pd.read_csv('jupyter2.csv') 
-df['preço2'] = df['preço'].replace('R$', '').replace('.', '').replace(',', '')
 df
 
 # Check if user has entered something in the text input box
